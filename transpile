@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+echo ""
+
+# Transpile Sass files to CSS in the output directory
+echo "Sass: Transpiling src/sass to html/css (compressed, no source map)"
+sass src/sass:html/css -s compressed --no-source-map
+echo "Sass: Transpilation complete"
+
+# Traspile Pug files to HTML in the output directory
+pug src/pug/ --out html/
+
+echo ""
