@@ -4,6 +4,7 @@
 sudo apt update
 sudo apt -y install bat
 
+# FIX: For some reason it didn't install nvm on. Will iron this out later.
 # NVM comes pre-installed on this image, so adding install of Node.js for our
 # transpilation tools.
 nvm install --lts
