@@ -3,11 +3,11 @@
 echo ""
 
 # Transpile Sass files to CSS in the output directory
-echo "Sass: Transpiling src/sass to html/css (compressed, no source map)"
-sass src/sass:html/css -s compressed --no-source-map
+echo "Sass: Transpiling src/sass to static/css (compressed, no source map)"
+sass src/sass:static/css -s compressed --no-source-map
 echo "Sass: Transpilation complete"
 
 # Traspile Pug files to HTML in the output directory
-pug src/pug/ --out html/
+pug src/pug/ --out static/
 
 echo ""
