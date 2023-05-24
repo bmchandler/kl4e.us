@@ -1,3 +1,14 @@
+###################
+# Imported from original site .gitignore...
+# (Everything else already covered in stock GH .gitignore.)
+# Not ignoring 'static' folder since commit of files to
+# that folder is now being used for GH Pages. Since there
+# is no plan on using binaries for my site then this is fine
+# for now.
+node_modules/
+kl4e.us_venv/
+###################
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
