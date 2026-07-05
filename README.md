@@ -1,4 +1,6 @@
 # kl4e.us
+==260705 - UPDATE - Long since retired. Leaving for reference.==
+
 Welcome to the repo of my personal amateur radio static site. The site itself
 is built from the code in this repo and output to the 'html' directory. I write
 the website content via the Pug and Sass languages. These are these are then
