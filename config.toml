@@ -1,0 +1,18 @@
+# Zola configuration — kl4e.us
+# Single-binary static site. No Sass compilation, no JS build.
+
+base_url = "https://kl4e.us"
+title = "KL4E — Brian Chandler"
+description = "Amateur radio station KL4E — station notes, band logs, experiments, and ham software."
+
+# Build clean URLs and a 404 page.
+generate_feeds = false
+compile_sass = false
+
+taxonomies = []
+
+# Note: fenced-code highlighting (for the band-notes pages) will be
+# configured under [markdown] when those pages are built.
+
+[extra]
+# Site-wide values available to templates as config.extra.*

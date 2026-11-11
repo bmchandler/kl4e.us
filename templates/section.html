@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}KL4E — {{ section.title }}{% endblock title %}
+{% block description %}{{ section.description | default(value="Amateur radio notes for KL4E.") }}{% endblock description %}
+
+{% block content %}
+  <div class="section-head">
+    <p class="eyebrow">{{ section.extra.eyebrow | default(value="NOTEBOOK") }}</p>
+    <h1>{{ section.title }}</h1>
+    {{ section.content | safe }}
+  </div>
+
+  <p class="placeholder-hint">// Stub page — real content comes in a later step.</p>
+{% endblock content %}
