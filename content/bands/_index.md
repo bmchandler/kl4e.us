@@ -10,7 +10,9 @@ overview = "[Your high-level overview from Obsidian — the lay of the HF bands 
 [[extra.bands]]
 name = "160 m"
 range = "1.800 – 2.000 MHz"
-note = "[Your 160 m notes — \"top band,\" winter nights, big-antenna challenge, regional work.]"
+note = "\"Top band\" — all modes, often noisy, and a tougher DX haul."
+real = true
+detail = "@/bands/160m.md"
 
 [[extra.bands]]
 name = "80 m"

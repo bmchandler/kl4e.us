@@ -35,7 +35,7 @@
           {% else %}
           <dt>{{ g.label }}</dt>
           {% endif %}
-          <dd class="v">{{ g.value }}</dd>
+          <dd class="v">{{ g.value }}{% if g.note %}<span class="vnote">{{ g.note }}</span>{% endif %}</dd>
         </div>
         {% endfor %}
       </dl>
