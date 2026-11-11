@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" role="img"
+     aria-labelledby="radio-title radio-desc">
+  <title id="radio-title">HF transceiver (IC-718 style)</title>
+  <desc id="radio-desc">Stylized line drawing of a boxy HF transceiver front panel: a seven-segment display reading 7.212 MHz in LSB, a large main tuning dial, two small gain knobs, and a row of buttons.</desc>
+  <!--
+    Portable line-art. Colors are concrete (light-theme values). To theme it,
+    drop the markup inline and set stroke/fill via CSS classes, or recolor:
+      structure #2C2920  ·  muted #8C8576 / #5C5649  ·  accent #B5531F
+  -->
+  <!-- body -->
+  <g fill="none" stroke="#2C2920" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="38" y="44" width="684" height="252" rx="14" stroke-width="2.5"/>
+    <rect x="52" y="58" width="656" height="224" rx="9" stroke-width="1"/>
+    <path d="M120 296 V304 M640 296 V304" stroke-width="1.75"/>
+  </g>
+  <!-- display window -->
+  <rect x="70" y="74" width="300" height="98" rx="6" fill="none" stroke="#2C2920" stroke-width="1.75"/>
+  <!-- S-meter strip -->
+  <g stroke-linecap="round">
+    <path d="M88 162 H352" fill="none" stroke="#8C8576" stroke-width="1"/>
+    <path d="M120 157 V162 M160 157 V162 M200 157 V162 M240 157 V162 M300 157 V162" fill="none" stroke="#8C8576" stroke-width="1"/>
+    <path d="M88 162 H214" fill="none" stroke="#B5531F" stroke-width="2.5"/>
+  </g>
+  <!-- 7-segment frequency: 7.212 -->
+  <g stroke="#B5531F" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M90 88 L112 88"/><path d="M116 92 L116 113"/><path d="M116 119 L116 140"/>
+    <path d="M144 88 L166 88"/><path d="M170 92 L170 113"/><path d="M144 116 L166 116"/><path d="M140 119 L140 140"/><path d="M144 140 L166 140"/>
+    <path d="M216 92 L216 113"/><path d="M216 119 L216 140"/>
+    <path d="M236 88 L258 88"/><path d="M262 92 L262 113"/><path d="M236 116 L258 116"/><path d="M232 119 L232 140"/><path d="M236 140 L258 140"/>
+  </g>
+  <circle cx="128" cy="141" r="3.5" fill="#B5531F"/>
+  <!-- display labels -->
+  <g font-family="'IBM Plex Mono', monospace" letter-spacing="0.04em">
+    <text x="352" y="136" font-size="12" fill="#5C5649" text-anchor="end">MHz</text>
+    <text x="352" y="100" font-size="11" fill="#B5531F" text-anchor="end">LSB</text>
+  </g>
+  <!-- main tuning dial -->
+  <g fill="none" stroke="#2C2920" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="620" cy="168" r="64" stroke-width="2.5"/>
+    <circle cx="620" cy="168" r="50" stroke-width="1.5"/>
+    <circle cx="620" cy="168" r="69" stroke-width="2" stroke-dasharray="3 6"/>
+    <circle cx="596" cy="148" r="12" stroke-width="1.75"/>
+  </g>
+  <!-- small gain knobs -->
+  <g fill="none" stroke="#2C2920" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="108" cy="214" r="20" stroke-width="2"/>
+    <path d="M108 214 L97 203" stroke-width="1.75"/>
+    <circle cx="168" cy="214" r="20" stroke-width="2"/>
+    <path d="M168 214 L152 214" stroke-width="1.75"/>
+  </g>
+  <g font-family="'IBM Plex Mono', monospace" font-size="10" fill="#5C5649" text-anchor="middle">
+    <text x="108" y="252">AF</text>
+    <text x="168" y="252">RF</text>
+  </g>
+  <!-- button bank -->
+  <g fill="none" stroke="#2C2920" stroke-width="1.75" stroke-linejoin="round">
+    <rect x="216" y="190" width="42" height="24" rx="4"/>
+    <rect x="268" y="190" width="42" height="24" rx="4"/>
+    <rect x="320" y="190" width="42" height="24" rx="4"/>
+    <rect x="372" y="190" width="42" height="24" rx="4"/>
+    <rect x="216" y="226" width="42" height="24" rx="4"/>
+    <rect x="268" y="226" width="42" height="24" rx="4"/>
+    <rect x="320" y="226" width="42" height="24" rx="4"/>
+    <rect x="372" y="226" width="42" height="24" rx="4"/>
+  </g>
+  <g font-family="'IBM Plex Mono', monospace" font-size="8.5" fill="#5C5649" text-anchor="middle" letter-spacing="0.03em">
+    <text x="237" y="206">MODE</text><text x="289" y="206">BAND</text><text x="341" y="206">SPL</text><text x="393" y="206">SET</text>
+    <text x="237" y="242">VFO</text><text x="289" y="242">M/V</text><text x="341" y="242">A/B</text><text x="393" y="242">TS</text>
+  </g>
+  <!-- brand / power text -->
+  <g font-family="'IBM Plex Mono', monospace" fill="#5C5649" letter-spacing="0.1em">
+    <text x="72" y="276" font-size="10">HF TRANSCEIVER</text>
+    <text x="686" y="276" font-size="10" text-anchor="end">100 W</text>
+  </g>
+</svg>
