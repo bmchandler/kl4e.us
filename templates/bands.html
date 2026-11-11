@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}KL4E — Bands{% endblock title %}
+{% block description %}Band-by-band amateur radio notes for KL4E — US HF allocations, WARC bands, propagation.{% endblock description %}
+
+{% block content %}
+  <div class="section-head">
+    <p class="eyebrow">{{ section.extra.eyebrow }}</p>
+    <h1>{{ section.title }}</h1>
+    <p>{{ section.extra.intro }}</p>
+  </div>
+
+  <section class="overview">
+    <h2 class="panel-h">US HF Ham Bands — overview</h2>
+    <p class="note">{{ section.extra.overview }}</p>
+  </section>
+
+  <div class="cards">
+    {% for b in section.extra.bands %}
+    <article class="band">
+      <div class="top">
+        <span class="bname">{{ b.name }}</span>
+        <span class="brange">{{ b.range }}</span>
+      </div>
+      {% if b.tags %}
+      <div class="tags">
+        {% for t in b.tags %}<span class="tag{% if t == "WARC" %} warc{% endif %}">{{ t }}</span>{% endfor %}
+      </div>
+      {% endif %}
+      <p class="note{% if b.real %} real{% endif %}">{{ b.note }}</p>
+      {% if b.detail %}<a class="more" href="{{ get_url(path=b.detail) }}">Full {{ b.name }} notes →</a>{% endif %}
+    </article>
+    {% endfor %}
+  </div>
+
+  <p class="placeholder-hint">// Bracketed text is placeholder — drop in your Obsidian notes per band. Add 60 m here anytime.</p>
+{% endblock content %}
