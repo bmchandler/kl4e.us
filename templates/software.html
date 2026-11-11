@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}KL4E — Software{% endblock title %}
+{% block description %}Ham radio software projects by KL4E — pota-logger and other tools.{% endblock description %}
+
+{% block content %}
+  <div class="section-head">
+    <p class="eyebrow">{{ section.extra.eyebrow }}</p>
+    <h1>{{ section.title }}</h1>
+    <p>{{ section.extra.intro }}</p>
+  </div>
+
+  <div class="cards">
+    {% for p in section.extra.projects %}
+    <article class="proj">
+      <div class="head">
+        <h2>{{ p.name }}</h2>
+        {% if p.lang %}<span class="lang">{{ p.lang }}</span>{% endif %}
+      </div>
+      <p class="{% if p.placeholder %}ph{% endif %}">{{ p.desc }}</p>
+      {% if p.tags %}
+      <div class="tags">
+        {% for t in p.tags %}<span>{{ t }}</span>{% endfor %}
+      </div>
+      {% endif %}
+      <a class="repo" href="{{ p.repo }}">↗ {{ p.repo_label }}</a>
+    </article>
+    {% endfor %}
+  </div>
+
+  {% if section.extra.placeholder %}<p class="placeholder-hint">{{ section.extra.placeholder }}</p>{% endif %}
+{% endblock content %}
