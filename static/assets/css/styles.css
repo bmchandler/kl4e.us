@@ -165,6 +165,8 @@ dl.specs dd.v { font-family: "IBM Plex Mono", monospace; font-size: 16px; }
 .pill { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
 .pill.active { color: var(--accent-ink); border-color: var(--accent-ink); }
 .exp h2 { font-size: 21px; margin: 0; font-weight: 600; letter-spacing: -.005em; color: var(--ink); }
+.exp h2 a { color: inherit; }
+.exp h2 a:hover { color: var(--accent-ink); filter: none; }
 .exp p { font-size: 15px; color: var(--muted); font-style: italic; margin: 0; max-width: 66ch; text-wrap: pretty; }
 
 /* Software */

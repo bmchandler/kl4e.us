@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}KL4E — {{ page.title }}{% endblock title %}
+{% block description %}Experiment log entry by KL4E — {{ page.title }}.{% endblock description %}
+{% block main_top %}48px{% endblock main_top %}
+
+{% block content %}
+  <a class="crumb" href="{{ get_url(path='@/experiments/_index.md') }}">← Experiments</a>
+  <article class="exp" style="margin-top:12px">
+    <div class="meta">
+      <span class="date">{{ page.date }}</span>
+      {% if page.extra.status == "in-progress" %}<span class="pill active">In progress</span>
+      {% elif page.extra.status == "complete" %}<span class="pill">Complete</span>{% endif %}
+    </div>
+    <h2 style="font-size:28px">{{ page.title }}</h2>
+    {{ page.content | safe }}
+  </article>
+{% endblock content %}
