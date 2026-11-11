@@ -10,7 +10,6 @@
     <p class="eyebrow">{{ page.extra.eyebrow }}</p>
     <h1>{{ page.title }}</h1>
     <p class="sub">{{ page.extra.sub }}</p>
-    <p class="stamp">{{ page.extra.stamp }}</p>
   </div>
 
   <section class="block">
@@ -51,4 +50,6 @@
     <h2 class="block-h">Band plan</h2>
     <pre class="code">{{ page.extra.blocks.bandplan }}</pre>
   </section>
+
+  {% if page.extra.stamp %}<p class="stamp">{{ page.extra.stamp }}</p>{% endif %}
 {% endblock content %}
