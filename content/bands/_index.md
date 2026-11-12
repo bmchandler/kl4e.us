@@ -32,7 +32,9 @@ detail = "@/bands/40m.md"
 name = "30 m"
 range = "10.100 – 10.150 MHz"
 tags = ["WARC"]
-note = "[Your 30 m notes — digital/CW only, no contests, quiet band.]"
+note = "Quiet WARC band — CW and data only, solid DX and FT8."
+real = true
+detail = "@/bands/30m.md"
 
 [[extra.bands]]
 name = "20 m"
