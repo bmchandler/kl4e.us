@@ -15,7 +15,6 @@
     <article class="proj">
       <div class="head">
         <h2>{{ p.name }}</h2>
-        {% if p.lang %}<span class="lang">{{ p.lang }}</span>{% endif %}
       </div>
       <p class="{% if p.placeholder %}ph{% endif %}">{{ p.desc }}</p>
       {% if p.tags %}

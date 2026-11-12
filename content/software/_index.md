@@ -9,16 +9,14 @@ placeholder = "// Confirm the pota-logger repo URL and fill the bracketed fields
 
 [[extra.projects]]
 name = "pota-logger"
-lang = "[lang]"
 tags = ["POTA", "Logging"]
 repo = "https://github.com/bmchandler/pota_logger"
 repo_label = "github.com/bmchandler/pota_logger"
-desc = "[Short description — what pota-logger does and who it's for. Replace this line with the real summary.]"
-placeholder = true
+desc = "A streamlined paper to digital POTA logger with ADIF export support. Created by me."
+placeholder = false
 
 [[extra.projects]]
 name = "[project-name]"
-lang = "[lang]"
 tags = ["[tag]", "[tag]"]
 repo = "#"
 repo_label = "repository link"
@@ -27,7 +25,6 @@ placeholder = true
 
 [[extra.projects]]
 name = "[project-name]"
-lang = "[lang]"
 tags = ["[tag]"]
 repo = "#"
 repo_label = "repository link"
