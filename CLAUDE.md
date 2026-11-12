@@ -118,6 +118,12 @@ of one: a second copy drifts, and can mask a problem in this file.
   like), to settle when that part gets built, unless it heavily should
   be nailed down now. UI/UX targets whoever the app is for at this
   stage: a question about a later audience waits for that part.
+- A rule, preference, or fix applies only within the scope of the
+  work at hand — a section, a page type, a card type, and the like,
+  usually just what we're currently editing — never site-wide by
+  default. Global application is rare and wants an explicit
+  call-out; when a rule could reach past the current scope, keep it
+  scoped and ask before sweeping it wider.
 - When reporting a change, call out as "Code Point: " any code
   trade-off or design choice with real impact that may cost us later,
   and any trap met, briefly and on its own so it stands out when
