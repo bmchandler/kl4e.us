@@ -70,7 +70,9 @@ detail = "@/bands/12m.md"
 [[extra.bands]]
 name = "10 m"
 range = "28.000 – 29.700 MHz"
-note = "[Your 10 m notes — sporadic-E, big openings near solar max, FM segment up top.]"
+note = "Groundwave like CB, summer sporadic-E, and an FM segment up top."
+real = true
+detail = "@/bands/10m.md"
 
 [[extra.bands]]
 name = "2 m"
