@@ -26,6 +26,15 @@ url = "https://github.com/bmchandler/pico_rp2040_tm1637"
 label = "github.com/bmchandler/pico_rp2040_tm1637"
 
 [[extra.projects]]
+name = "sigrok_tmc"
+tags = ["Sigrok", "Decoder"]
+desc = "Fork of a protocol decoder I got working for use with the TM1637 LED."
+placeholder = false
+[[extra.projects.links]]
+url = "https://github.com/bmchandler/sigrok_tmc"
+label = "github.com/bmchandler/sigrok_tmc"
+
+[[extra.projects]]
 name = "hamexam"
 tags = ["Study", "Licensing"]
 desc = "Study tool for USA FCC amateur radio (ham) exam that I used to start studying for my license. Available on Debian Linux. Created by John Nogatch AC6SL."
