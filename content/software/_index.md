@@ -17,6 +17,15 @@ url = "https://github.com/bmchandler/pota_logger"
 label = "github.com/bmchandler/pota_logger"
 
 [[extra.projects]]
+name = "pico_rp2040_tm1637"
+tags = ["RP2040", "Embedded"]
+desc = "TM1637 driver example for RP2040 projects with a HAL. May be useful for some ham projects."
+placeholder = false
+[[extra.projects.links]]
+url = "https://github.com/bmchandler/pico_rp2040_tm1637"
+label = "github.com/bmchandler/pico_rp2040_tm1637"
+
+[[extra.projects]]
 name = "hamexam"
 tags = ["Study", "Licensing"]
 desc = "Study tool for USA FCC amateur radio (ham) exam that I used to start studying for my license. Available on Debian Linux. Created by John Nogatch AC6SL."
