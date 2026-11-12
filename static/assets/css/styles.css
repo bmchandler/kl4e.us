@@ -166,7 +166,7 @@ dl.specs dd.v { font-family: "IBM Plex Mono", monospace; font-size: 16px; }
 .band .bname { font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: 23px; letter-spacing: .03em; }
 .band .brange { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--muted); }
 .band .tags { display: flex; flex-wrap: wrap; gap: 7px; }
-.band .tag { font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; align-self: flex-start; color: var(--muted); border: 1px solid var(--line); }
+.band .tag { font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .14em; text-indent: .14em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; align-self: flex-start; color: var(--muted); border: 1px solid var(--line); }
 .band .tag.warc { color: var(--accent-ink); border-color: var(--accent-ink); }
 .band .note { font-size: 14.5px; color: var(--muted); font-style: italic; margin: 0; text-wrap: pretty; }
 .band .note.real { font-style: normal; color: var(--ink); }
@@ -177,7 +177,7 @@ dl.specs dd.v { font-family: "IBM Plex Mono", monospace; font-size: 16px; }
 .exp { border: 1px solid var(--line); background: var(--panel); border-radius: 4px; padding: 24px clamp(20px, 3vw, 28px); display: flex; flex-direction: column; gap: 12px; }
 .exp .meta { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; }
 .exp .date { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--muted); letter-spacing: .04em; }
-.pill { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.pill { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: .12em; text-indent: .12em; text-transform: uppercase; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
 .pill.active { color: var(--accent-ink); border-color: var(--accent-ink); }
 .exp h2 { font-size: 21px; margin: 0; font-weight: 600; letter-spacing: -.005em; color: var(--ink); }
 .exp h2 a { color: inherit; }
@@ -193,7 +193,7 @@ dl.specs dd.v { font-family: "IBM Plex Mono", monospace; font-size: 16px; }
 .proj .links { display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
 .proj .repo { font-family: "IBM Plex Mono", monospace; font-size: 13px; display: inline-flex; align-items: center; gap: 7px; }
 .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 2px; }
-.tags span { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 3px 9px; }
+.tags span { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: .08em; text-indent: .08em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 3px 9px; }
 .ph { font-style: italic; }
 
 /* Band detail (40m) */
@@ -203,7 +203,7 @@ dl.specs dd.v { font-family: "IBM Plex Mono", monospace; font-size: 16px; }
 .tk { display: flex; gap: 13px; align-items: flex-start; }
 .tk .m { flex: none; width: 18px; height: 2px; border-radius: 2px; margin-top: 11px; background: var(--accent-ink); }
 .tk p { margin: 0; font-size: 15.5px; }
-.pota-tag { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; color: var(--accent-ink); border: 1px solid var(--accent-ink); }
+.pota-tag { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .12em; text-indent: .12em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; color: var(--accent-ink); border: 1px solid var(--accent-ink); }
 .code { font-family: "IBM Plex Mono", monospace; font-size: 13px; line-height: 1.75; color: var(--ink); background: var(--code); border: 1px solid var(--line); border-radius: 4px; padding: 20px 22px; margin: 0; overflow-x: auto; white-space: pre; }
 
 /* ---- Footer -------------------------------------------------------------- */
