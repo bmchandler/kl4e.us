@@ -5,7 +5,6 @@ template = "software.html"
 [extra]
 eyebrow = "PROJECTS"
 intro = "Ham radio tools I've built, some of my ham radio related repos, and 3rd party software of note."
-placeholder = "// Confirm the pota-logger repo URL and fill the bracketed fields. Add or remove projects in content/software/_index.md."
 
 [[extra.projects]]
 name = "pota-logger"
@@ -54,22 +53,4 @@ label = "Debian package"
 [[extra.projects.links]]
 url = "https://dyn.manpages.debian.org/trixie/hamexam/hamexam.1.en.html"
 label = "Manpage — question-pool dates"
-
-[[extra.projects]]
-name = "[project-name]"
-tags = ["[tag]", "[tag]"]
-desc = "[What it does, in a sentence or two.]"
-placeholder = true
-[[extra.projects.links]]
-url = "#"
-label = "repository link"
-
-[[extra.projects]]
-name = "[project-name]"
-tags = ["[tag]"]
-desc = "[What it does, in a sentence or two.]"
-placeholder = true
-[[extra.projects.links]]
-url = "#"
-label = "repository link"
 +++
