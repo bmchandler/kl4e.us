@@ -74,9 +74,6 @@ note = "Groundwave like CB, summer sporadic-E, and an FM segment up top."
 real = true
 detail = "@/bands/10m.md"
 
-[[extra.bands]]
-name = "2 m"
-range = "144.000 – 148.000 MHz"
-tags = ["VHF"]
-note = "[Your 2 m notes — FM/repeaters, SSB weak-signal, local & simplex work.]"
+# 2 m (VHF) intentionally omitted for now — to be built out in a dedicated
+# session (its content differs from the HF band template). See TODO below.
 +++
