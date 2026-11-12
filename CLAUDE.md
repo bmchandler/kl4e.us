@@ -4,6 +4,9 @@ Personal amateur radio website, hosted on GitHub Pages and deployed
 with GitHub Actions. Being overhauled: the earlier site's source is
 kept for reference only.
 
+`design/` is a historical design-seed mockup: reference only, never
+edit it. The live site is built from `templates/` and `content/`.
+
 ## Working norms (portable)
 
 Norms the user has settled across projects, not specific to this one.
