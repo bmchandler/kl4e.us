@@ -5,8 +5,7 @@ template = "bands.html"
 [extra]
 eyebrow = "NOTEBOOK"
 intro = "My band-by-band notes — propagation, where the activity lives, how the antenna behaves. Frequency edges are the US amateur allocations; the notes come from my Obsidian notebook. WARC bands are marked; 60 m is left off for now."
-overview = "[Your high-level overview from Obsidian — the lay of the HF bands and your notes on the ones you skip.]"
-footnote = "Worth remembering: until 2024, US RTTY and data on the HF bands below 28 MHz — 160, 80, 40, 30, 20, 17, 15 and 12 m — were held to a 300-baud symbol rate and a 1 kHz maximum FSK shift. 10 m and up were looser (10 m allowed 1200 baud). The FCC replaced those symbol-rate limits with a single 2.8 kHz bandwidth limit in the RTTY/data subbands. Kept here because the old limit still comes up in conversation."
+overview = "Quick breakdown of the US Amateur Radio HF bands, along with notable FCC rules and changes."
 
 [[extra.bands]]
 name = "160 m"

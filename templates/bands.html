@@ -10,11 +10,10 @@
     <p>{{ section.extra.intro }}</p>
   </div>
 
-  {% if section.extra.footnote %}<p class="bandnote">{{ section.extra.footnote }}</p>{% endif %}
-
   <section class="overview">
     <h2 class="panel-h">US HF Ham Bands — overview</h2>
     <p class="note">{{ section.extra.overview }}</p>
+    <a class="more" href="{{ get_url(path='@/bands/overview.md') }}">Read the overview →</a>
   </section>
 
   <div class="cards">
@@ -24,11 +23,11 @@
         <span class="bname">{{ b.name }}</span>
         <span class="brange">{{ b.range }}</span>
       </div>
-      {% if b.tags %}
       <div class="tags">
-        {% for t in b.tags %}<span class="tag{% if t == "WARC" %} warc{% endif %}">{{ t }}</span>{% endfor %}
+        {% set bt = b.tags | default(value=[]) %}
+        {% if "VHF" in bt %}<span class="tag">VHF</span>{% else %}<span class="tag">HF</span>{% endif %}
+        {% if "WARC" in bt %}<span class="tag warc">WARC</span>{% endif %}
       </div>
-      {% endif %}
       {% if b.note %}<p class="note{% if b.real %} real{% endif %}">{{ b.note }}</p>{% endif %}
       {% if b.detail %}<a class="more" href="{{ get_url(path=b.detail) }}">Full {{ b.name }} notes →</a>{% endif %}
     </article>
