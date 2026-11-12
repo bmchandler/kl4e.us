@@ -47,7 +47,9 @@ detail = "@/bands/20m.md"
 name = "17 m"
 range = "18.068 – 18.168 MHz"
 tags = ["WARC"]
-note = "[Your 17 m notes — narrow band, low congestion, DX when open.]"
+note = "Narrow WARC band — quiet, and a touch more solar-cycle dependent than 20 m."
+real = true
+detail = "@/bands/17m.md"
 
 [[extra.bands]]
 name = "15 m"
