@@ -63,7 +63,9 @@ detail = "@/bands/15m.md"
 name = "12 m"
 range = "24.890 – 24.990 MHz"
 tags = ["WARC"]
-note = "[Your 12 m notes — sporadic, best near solar max, often overlooked.]"
+note = "Quiet WARC band — daytime use, with nighttime DX around solar max."
+real = true
+detail = "@/bands/12m.md"
 
 [[extra.bands]]
 name = "10 m"
