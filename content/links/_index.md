@@ -15,7 +15,7 @@ url = "https://www.arrl.org/getting-licensed"
 label = "HamRadioPrep"
 url = "https://hamradioprep.com"
 [[extra.groups.links]]
-label = "W4VEC"
+label = "W4VEC — Volunteer Examiner Coordinator"
 url = "https://www.w4vec.org"
 [[extra.groups.links]]
 label = "FCC ID Search"
@@ -75,11 +75,11 @@ title = "Listen via the web"
 label = "KiwiSDR Listing"
 url = "http://kiwisdr.com/public/"
 [[extra.groups.links]]
-label = "SwR - Global Radio App for Android"
-url = "https://play.google.com/store/apps/details?id=com.kruen.swr&hl=en"
-[[extra.groups.links]]
 label = "Receiverbook (OpenWebRX + others)"
 url = "https://www.receiverbook.de"
+[[extra.groups.links]]
+label = "SwR - Global Radio App for Android"
+url = "https://play.google.com/store/apps/details?id=com.kruen.swr&hl=en"
 
 [[extra.groups]]
 title = "Digital modes & SIGINT"
