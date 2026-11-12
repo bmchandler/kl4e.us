@@ -147,6 +147,13 @@ dl.specs dd.v { font-family: "IBM Plex Mono", monospace; font-size: 16px; }
 .overview { border: 1px solid var(--line); background: var(--panel); border-radius: 4px; padding: 24px clamp(20px, 3vw, 28px); margin: 0 0 30px; }
 .overview .note { font-size: 15px; color: var(--muted); font-style: italic; margin: 0; max-width: 72ch; text-wrap: pretty; }
 /* Prose (overview page: Markdown body) */
+.linkgroups { max-width: 60ch; }
+.linkgroup { margin: 0 0 40px; }
+.linkgroup:last-child { margin-bottom: 0; }
+.linkgroup h2 { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin: 0 0 16px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+.linklist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.linklist a { font-size: 17px; color: var(--accent-ink); }
+
 .prose { max-width: 70ch; }
 .prose h2 { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin: 40px 0 16px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
 .prose h2:first-child { margin-top: 0; }
