@@ -27,7 +27,7 @@
         {% for t in b.tags %}<span class="tag{% if t == "WARC" %} warc{% endif %}">{{ t }}</span>{% endfor %}
       </div>
       {% endif %}
-      <p class="note{% if b.real %} real{% endif %}">{{ b.note }}</p>
+      {% if b.note %}<p class="note{% if b.real %} real{% endif %}">{{ b.note }}</p>{% endif %}
       {% if b.detail %}<a class="more" href="{{ get_url(path=b.detail) }}">Full {{ b.name }} notes →</a>{% endif %}
     </article>
     {% endfor %}

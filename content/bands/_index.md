@@ -17,7 +17,9 @@ detail = "@/bands/160m.md"
 [[extra.bands]]
 name = "80 m"
 range = "3.500 – 4.000 MHz"
-note = "[Your 80 m notes — nighttime regional, noise floor, tuner settings.]"
+note = "Nighttime band, huge and busy — ragchew country, best in winter."
+real = true
+detail = "@/bands/80m.md"
 
 [[extra.bands]]
 name = "40 m"
