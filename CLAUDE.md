@@ -121,6 +121,11 @@ of one: a second copy drifts, and can mask a problem in this file.
   skimming. Skip it when there's none. The general rule: pay a cost
   at implementation rather than let it compound down the road, so
   raise these while they're still cheap to change.
+- Items the user should look over on hand-off (wording drafted for
+  them, interpretations made, small choices) go under a "Things for
+  review" heading, not "things to flag": they are for the user to
+  review, not actions required of them. Distinct from "Code Point:",
+  which is for code trade-offs.
 
 ### Wording and docs
 
