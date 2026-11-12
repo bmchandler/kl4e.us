@@ -146,6 +146,7 @@ dl.specs dd.v { font-family: "IBM Plex Mono", monospace; font-size: 16px; }
 /* Bands */
 .overview { border: 1px solid var(--line); background: var(--panel); border-radius: 4px; padding: 24px clamp(20px, 3vw, 28px); margin: 0 0 30px; }
 .overview .note { font-size: 15px; color: var(--muted); font-style: italic; margin: 0; max-width: 72ch; text-wrap: pretty; }
+.bandnote { font-size: 13px; line-height: 1.6; color: var(--muted); max-width: 74ch; margin: 0 0 26px; text-wrap: pretty; }
 .cards { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(330px, 100%), 1fr)); }
 .band { border: 1px solid var(--line); background: var(--panel); border-radius: 4px; padding: 20px 22px; display: flex; flex-direction: column; gap: 14px; }
 .band .top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--line); padding-bottom: 12px; }

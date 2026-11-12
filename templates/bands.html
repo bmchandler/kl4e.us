@@ -10,6 +10,8 @@
     <p>{{ section.extra.intro }}</p>
   </div>
 
+  {% if section.extra.footnote %}<p class="bandnote">{{ section.extra.footnote }}</p>{% endif %}
+
   <section class="overview">
     <h2 class="panel-h">US HF Ham Bands — overview</h2>
     <p class="note">{{ section.extra.overview }}</p>
