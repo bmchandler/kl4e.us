@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}KL4E — Links{% endblock title %}
+{% block description %}A small, curated set of amateur-radio starting points for newcomers, from KL4E.{% endblock description %}
+
+{% block content %}
+  <div class="section-head">
+    <p class="eyebrow">{{ section.extra.eyebrow }}</p>
+    <h1>{{ section.title }}</h1>
+    <p>{{ section.extra.intro }}</p>
+  </div>
+
+  <div class="linkgroups">
+    {% for g in section.extra.groups %}
+    <section class="linkgroup">
+      <h2>{{ g.title }}</h2>
+      <ul class="linklist">
+        {% for l in g.links %}
+        <li><a href="{{ l.url }}">{{ l.label }} ↗</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
+  </div>
+{% endblock content %}

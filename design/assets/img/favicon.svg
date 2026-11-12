@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="KL4E">
+  <!-- Callsign favicon. Amber tile, cream characters (KL over 4E). -->
+  <rect width="32" height="32" rx="7" fill="#B5531F"/>
+  <g fill="#F4F1EA" font-family="'IBM Plex Mono', ui-monospace, monospace" font-weight="600" font-size="13.5" text-anchor="middle">
+    <text x="16" y="9.7" dominant-baseline="central">KL</text>
+    <text x="16" y="22.3" dominant-baseline="central">4E</text>
+  </g>
+</svg>

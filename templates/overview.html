@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}KL4E — {{ page.title }}{% endblock title %}
+{% block description %}A high-level overview of the US HF amateur bands, from KL4E.{% endblock description %}
+{% block main_top %}48px{% endblock main_top %}
+
+{% block content %}
+  <a class="crumb" href="{{ get_url(path='@/bands/_index.md') }}">← Bands</a>
+  <div class="section-head">
+    <p class="eyebrow">{{ page.extra.eyebrow | default(value="REFERENCE") }}</p>
+    <h1>{{ page.title }}</h1>
+  </div>
+
+  <div class="prose">
+    {{ page.content | safe }}
+  </div>
+{% endblock content %}

@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}KL4E — {{ page.title }}{% endblock title %}
+{% block description %}{{ page.title }} band notes for KL4E — key takeaways, band plan, and key frequencies.{% endblock description %}
+{% block main_top %}48px{% endblock main_top %}
+
+{% block content %}
+  <a class="crumb" href="{{ get_url(path='@/bands/_index.md') }}">← Bands</a>
+  <div class="section-head">
+    <p class="eyebrow">{{ page.extra.eyebrow }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="sub">{{ page.extra.sub }}</p>
+  </div>
+
+  <section class="block">
+    <h2 class="block-h">Key takeaways</h2>
+    <div class="panel">
+      <div class="takeaways">
+        {% for t in page.extra.takeaways %}
+        <div class="tk"><span class="m"></span><p>{{ t }}</p></div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="block-h">Band at a glance</h2>
+    <div class="panel">
+      <dl class="specs">
+        {% for g in page.extra.glance %}
+        <div>
+          <dt>{{ g.label }}</dt>
+          <dd class="v">{{ g.value }}{% if g.note %}<span class="vnote">{{ g.note }}</span>{% endif %}</dd>
+        </div>
+        {% endfor %}
+      </dl>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="block-h">Key frequencies</h2>
+    <pre class="code">{{ page.extra.blocks.keyfreqs }}</pre>
+  </section>
+
+  <section class="block">
+    <h2 class="block-h">Band plan</h2>
+    <pre class="code">{{ page.extra.blocks.bandplan }}</pre>
+  </section>
+
+  {% if page.extra.stamp %}<p class="stamp">{{ page.extra.stamp }}</p>{% endif %}
+{% endblock content %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}KL4E — Bands{% endblock title %}
+{% block description %}Band-by-band amateur radio notes for KL4E — US HF allocations, WARC bands, propagation.{% endblock description %}
+
+{% block content %}
+  <div class="section-head">
+    <p class="eyebrow">{{ section.extra.eyebrow }}</p>
+    <h1>{{ section.title }}</h1>
+    <p>{{ section.extra.intro }}</p>
+  </div>
+
+  <section class="overview">
+    <h2 class="panel-h">US HF Ham Bands — overview</h2>
+    <p class="note">{{ section.extra.overview }}</p>
+    <a class="more" href="{{ get_url(path='@/bands/overview.md') }}">Read the overview →</a>
+  </section>
+
+  <div class="cards">
+    {% for b in section.extra.bands %}
+    <article class="band">
+      <div class="top">
+        <span class="bname">{{ b.name }}</span>
+        <span class="brange">{{ b.range }}</span>
+      </div>
+      <div class="tags">
+        {% set bt = b.tags | default(value=[]) %}
+        {% if "VHF" in bt %}<span class="tag">VHF</span>{% else %}<span class="tag">HF</span>{% endif %}
+        {% if "WARC" in bt %}<span class="tag warc">WARC</span>{% endif %}
+      </div>
+      {% if b.note %}<p class="note{% if b.real %} real{% endif %}">{{ b.note }}</p>{% endif %}
+      {% if b.detail %}<a class="more" href="{{ get_url(path=b.detail) }}">Full {{ b.name }} notes →</a>{% endif %}
+    </article>
+    {% endfor %}
+  </div>
+{% endblock content %}

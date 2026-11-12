@@ -1,20 +1,28 @@
 # kl4e.us
-==260705 - UPDATE - Long since retired. Leaving for reference.==
 
-Welcome to the repo of my personal amateur radio static site. The site itself
-is built from the code in this repo and output to the 'html' directory. I write
-the website content via the Pug and Sass languages. These are these are then
-built/transpiled into HTML & CSS respectively in the 'html' directory. The reason
-I'm trying hosting it here is because Codespaces is now available. Update to the
-'html' directory on a fresh build automatically triggers GitHub Pages to update
-the live site. That said, if you use my build code, the 'html' contents is
-effectively live on commit.
+Personal website for amateur radio station **KL4E** (Brian Chandler) —
+station notes, HF band references, and ham-radio software projects.
+Live at <https://kl4e.us>.
 
-My Static Website Build Code for building the static site is free to use under
-the CC BY-NC-SA 4.0 Intl. License. I still retain all rights on the static site
-Content created by me. The intent is to allow others (particularly amateur radio 
-operators) to reuse the structure of this repo and the site building code for their
-own personal website if they so desire.
+## About the site
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)  
-This Static Website Build Code (the Work) is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+A small, agentically-built static site. The visual design and theme
+are my own creative direction, realized agentically. It has three
+sections:
+
+- **Bands** — band-by-band HF notes covering propagation, key
+  frequencies, and band plans, with a page per band and an overview of
+  the US HF allocations and notable FCC rules.
+- **Software** — ham-radio tools I've written (a POTA logger, embedded
+  drivers, a protocol decoder) alongside third-party software of note.
+- **Links** — a hand-picked set of starting points for anyone new to
+  amateur radio.
+
+## Built with
+
+- [Zola](https://www.getzola.org/) — a single-binary static site
+  generator. Content is Markdown with TOML front matter; the layout is
+  a set of agentically-written HTML templates and plain CSS, with no
+  Sass or JavaScript build step.
+- **GitHub Actions** builds the site and deploys it to **GitHub Pages**
+  on every push.
