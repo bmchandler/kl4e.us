@@ -22,7 +22,11 @@
         {% for t in p.tags %}<span>{{ t }}</span>{% endfor %}
       </div>
       {% endif %}
-      <a class="repo" href="{{ p.repo }}">↗ {{ p.repo_label }}</a>
+      {% if p.links %}
+      <div class="links">
+        {% for l in p.links %}<a class="repo" href="{{ l.url }}">↗ {{ l.label }}</a>{% endfor %}
+      </div>
+      {% endif %}
     </article>
     {% endfor %}
   </div>
