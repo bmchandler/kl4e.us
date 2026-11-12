@@ -3,7 +3,7 @@
 
 base_url = "https://kl4e.us"
 title = "KL4E — Brian Chandler"
-description = "Amateur radio station KL4E — station notes, band logs, experiments, and ham software."
+description = "Amateur radio station KL4E — station notes, band logs, and ham software."
 
 # Build clean URLs and a 404 page.
 generate_feeds = false

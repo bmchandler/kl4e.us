@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% block title %}KL4E — Brian Chandler · Amateur Radio Station{% endblock title %}</title>
-<meta name="description" content="{% block description %}Amateur radio station KL4E — Brian Chandler, Amateur Extra, Kernersville NC. Station notes, band logs, experiments, and ham software.{% endblock description %}">
+<meta name="description" content="{% block description %}Amateur radio station KL4E — Brian Chandler, Amateur Extra, Kernersville NC. Station notes, band logs, and ham software.{% endblock description %}">
 <link rel="icon" href="{{ get_url(path='assets/img/favicon.svg') }}" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,6 @@
     <nav class="main" aria-label="Primary">
       <a href="{{ get_url(path='@/_index.md') }}"{% if cp == "/" %} aria-current="page"{% endif %}>Home</a>
       <a href="{{ get_url(path='@/bands/_index.md') }}"{% if "/bands" in cp %} aria-current="page"{% endif %}>Bands</a>
-      <a href="{{ get_url(path='@/experiments/_index.md') }}"{% if "/experiments" in cp %} aria-current="page"{% endif %}>Experiments</a>
       <a href="{{ get_url(path='@/software/_index.md') }}"{% if "/software" in cp %} aria-current="page"{% endif %}>Software</a>
       <a class="ext" href="https://www.qrz.com/db/KL4E">QRZ&nbsp;Profile&nbsp;↗</a>
     </nav>
