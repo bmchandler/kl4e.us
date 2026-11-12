@@ -4,7 +4,7 @@ template = "links.html"
 
 [extra]
 eyebrow = "RESOURCES"
-intro = "A small, hand-picked set of starting points for anyone new to amateur radio — the stable, regularly useful ones worth bookmarking."
+intro = "A small, hand-picked set of starting points for anyone new to amateur radio."
 
 [[extra.groups]]
 title = "Licensing & study"

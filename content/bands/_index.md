@@ -4,8 +4,8 @@ template = "bands.html"
 
 [extra]
 eyebrow = "NOTEBOOK"
-intro = "My band-by-band notes — propagation, where the activity lives, how the antenna behaves. Frequency edges are the US amateur allocations; the notes come from my Obsidian notebook. WARC bands are marked; 60 m is left off for now."
-overview = "Quick breakdown of the US Amateur Radio HF bands, along with notable FCC rules and changes."
+intro = "My band-by-band notes — propagation, key frequencies, band plans. Frequency edges are the US amateur allocations. WARC bands are marked accordingly."
+overview = "Quick breakdown of the US Amateur Radio HF bands, why I skipped some bands below, and notable FCC rules and changes."
 
 [[extra.bands]]
 name = "160 m"
