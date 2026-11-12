@@ -39,7 +39,9 @@ detail = "@/bands/30m.md"
 [[extra.bands]]
 name = "20 m"
 range = "14.000 – 14.350 MHz"
-note = "[Your 20 m notes — daytime DX, POTA activity, the reliable workhorse.]"
+note = "The daytime DX and POTA workhorse — great for portable antenna setups."
+real = true
+detail = "@/bands/20m.md"
 
 [[extra.bands]]
 name = "17 m"
