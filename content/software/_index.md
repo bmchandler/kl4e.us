@@ -16,6 +16,15 @@ url = "https://github.com/bmchandler/pota_logger"
 label = "github.com/bmchandler/pota_logger"
 
 [[extra.projects]]
+name = "kl4e.us"
+tags = ["Zola", "Website"]
+desc = "Repository containing the code for this website. Builds with Zola + GitHub Actions live after push to main."
+placeholder = false
+[[extra.projects.links]]
+url = "https://github.com/bmchandler/kl4e.us"
+label = "github.com/bmchandler/kl4e.us"
+
+[[extra.projects]]
 name = "pico_rp2040_tm1637"
 tags = ["RP2040", "Embedded"]
 desc = "TM1637 driver example for RP2040 projects with a HAL. May be useful for some ham projects."
